@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tugas kalkulator</title>
+    <link rel="stylesheet" href="./style1 Kalkulator.css">
+</head>
+<body>
+    
+
+    <h1>CALCULATOR</h1> 
+  <div id="main"> 
+   <form> 
+    <input type="text" id="viewer"> 
+    <table> 
+     <tbody>
+      <tr> 
+       <td> <input type="button" value="C" class="opr" onclick="clean()"> </td> 
+       <td> <input type="button" value="AC" class="opr" onclick="backspace()"> </td> 
+       <td> <input type="button" value="/" class="opr" onclick="view('/')"> </td> 
+       <td> <input type="button" value="X" class="opr" onclick="view('*')"> </td> 
+      </tr> 
+      <tr> 
+       <td> <input type="button" value="7" class="btn" onclick="view(7)"> </td> 
+       <td> <input type="button" value="8" class="btn" onclick="view(8)"> </td> 
+       <td> <input type="button" value="9" class="btn" onclick="view(9)"> </td> 
+       <td> <input type="button" value="-" class="opr" onclick="view('-')"> </td>
+      </tr> 
+      <tr> 
+       <td> <input type="button" value="4" class="btn" onclick="view(4)"> </td> 
+       <td> <input type="button" value="5" class="btn" onclick="view(5)"> </td> 
+       <td> <input type="button" value="6" class="btn" onclick="view(6)"> </td> 
+       <td> <input type="button" value="+" class="opr" onclick="view('+')"> </td> 
+      </tr> 
+      <tr> 
+       <td> <input type="button" value="1" class="btn" onclick="view(1)"> </td> 
+       <td> <input type="button" value="2" class="btn" onclick="view(2)"> </td> 
+       <td> <input type="button" value="3" class="btn" onclick="view(3)"> </td> 
+       <td rowspan="2"> <input type="button" value="=" class="opr" onclick="equal()" style="height: 12.4em;"> </td> 
+      </tr> 
+      <tr> 
+       <td> <input type="button" value="0" class="btn" onclick="view('0')"> </td> 
+       <td> <input type="button" value="000" class="btn" onclick="view('000')"> </td> 
+       <td> <input type="button" value="." class="btn" onclick="view('.')"> </td> 
+      </tr> 
+     </tbody>
+    </table> 
+   </form> 
+  </div>
+
+
+    <script src="./kalkulator.js" type="text/javascript"></script>
+</body>
+</html>
